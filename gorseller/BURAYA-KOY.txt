@@ -1,0 +1,34 @@
+Bu klasöre aşağıdaki isimlerle görsel koy. Olmayan görsel sayfada otomatik gizlenir, sayfa bozulmaz.
+
+GİRİŞ
+  kapak.jpg                 Giriş ekranının arka planı. En güzel manzara, 1920x1080.
+  ikon.png                  Tarayıcı sekmesi ikonu, kare (ör. 256x256).
+
+YETENEKLER (16:10 oran)
+  yetenek-silme.jpg         Silme modunda kayarken
+  yetenek-surukleme.jpg     Taş sürüklerken
+  yetenek-kilic.jpg         Kılıçla dövüşürken
+  yetenek-diger.jpg         Serbest
+
+DÜNYA (16:10 oran)
+  dunya-orman.jpg           Orman adası / ana köy
+  dunya-buz.jpg             Buz Krallığı (yoksa boş bırak)
+  dunya-lav.jpg             Lav Krallığı silueti (yoksa boş bırak)
+
+GALERİ (16:9, 1920x1080)
+  ekran-1.jpg ... ekran-6.jpg
+
+KARAKTERLER (kare, arka planı şeffaf PNG en güzeli)
+  karakter-kumbara.png
+  karakter-piyano.png
+  karakter-telefon.png
+  karakter-tabela.png
+  karakter-kopekbaligi.png
+  karakter-kaptan.png
+
+EKİP
+  mustafa.jpg               Fotoğraf ya da avatar, kare
+
+VİDEO
+  index.html içinde YOUTUBE_KIMLIGI yazan yere YouTube videonun kimliğini yaz
+  (youtube.com/watch?v=BURASI).

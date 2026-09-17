@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eraiser</title>
+<meta name="description" content="Eraiser — nesnelerden oluşan canlı bir dünyada geçen 3D açık dünya bulmaca-macera oyunu.">
+<meta property="og:title" content="Eraiser">
+<meta property="og:description" content="Karanlığı sil, dünyayı aç. 3D açık dünya bulmaca-macera.">
+<meta property="og:image" content="gorseller/kapak.jpg">
+<link rel="icon" href="gorseller/ikon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<!-- ============ ÜST ============ -->
+<header class="ust">
+  <a class="logo" href="#">Eraiser</a>
+  <nav>
+    <a href="#oyun">Oyun</a>
+    <a href="#dongu">Döngü</a>
+    <a href="#dunya">Dünya</a>
+    <a href="#durum">Durum</a>
+    <a href="#ekip">Ekip</a>
+  </nav>
+</header>
+
+<!-- ============ GİRİŞ ============ -->
+<section class="giris">
+  <div class="giris-arka">
+    <img src="gorseller/kapak.jpg" alt="" onerror="this.remove()">
+  </div>
+  <div class="giris-icerik">
+    <p class="etiket">3D açık dünya bulmaca-macera · PC</p>
+    <h1>Karanlığı sil,<br>dünyayı aç.</h1>
+    <p class="giris-alt">Küçük bir silgi, nesnelerden yapılmış canlı bir dünyada, her şeyi saran karanlık asma dallarına karşı.</p>
+    <div class="dugmeler">
+      <a class="dugme ana" href="#video">Videoyu izle</a>
+      <a class="dugme" href="https://x.com/eraisergame" target="_blank" rel="noopener">@eraisergame</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VİDEO ============ -->
+<section class="bolum" id="video">
+  <div class="video-kutu">
+    <!-- YouTube linkinin sonundaki kimliği aşağıya yaz: youtube.com/watch?v=BURASI -->
+    <iframe data-youtube="nJeYo7b5-RI" title="Eraiser Pre-Alpha #1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    <div class="yer-tutucu">Oynanış videosu buraya gelecek</div>
+  </div>
+</section>
+
+<!-- ============ OYUN NEDİR ============ -->
+<section class="bolum" id="oyun">
+  <h2>Oyun nedir?</h2>
+  <div class="iki-kolon">
+    <div>
+      <p class="buyuk">Eraiser'da küçük bir silgisin. Dünya; tabelalardan, telefonlardan, kumbaralardan ve piyanolardan yapılmış karakterlerle dolu. Ama her yeri karanlık asma dalları sarmış.</p>
+      <p>Dalları silerek yol açıyor, dünyaya dağılmış bulmacaları çözüyor, her çözümde <strong>kalıcı bir yetenek</strong> kazanıyorsun. Her yetenek, daha önce önünden geçip ulaşamadığın yerlere geri dönmen için bir sebep. Bulmacaların ödülü ve engeli aynı karede görünür; oyuna yol gösteren işaret, ok ya da harita noktası koymuyoruz, oyuncu merakla ilerliyor.</p>
+    </div>
+    <ul class="kartlar-kucuk">
+      <li><b>Tür</b><span>Açık dünya bulmaca-macera</span></li>
+      <li><b>Ton</b><span>Sevimli ama çocuksu değil</span></li>
+      <li><b>Platform</b><span>PC (Steam)</span></li>
+      <li><b>Model</b><span>Premium</span></li>
+      <li><b>Motor</b><span>Unity (URP)</span></li>
+      <li><b>İlham</b><span>Supraland, Zelda, Adventure Time</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ GÜN DÖNGÜSÜ ============ -->
+<section class="bolum saatler-bolum" id="saatler">
+  <h2>Günün her saati</h2>
+  <p class="aciklama">Dünya kendi gün döngüsüyle yaşıyor: sabah, öğle, gün batımı, gece. Işık, gökyüzü, müzik ve hayvanlar saate göre değişiyor.</p>
+  <div class="saatler">
+    <figure><img src="gorseller/saat-sabah.jpg" alt="Sabah" loading="lazy" onerror="this.remove()"><figcaption>Sabah</figcaption></figure>
+    <figure><img src="gorseller/saat-oglen.jpg" alt="Öğle" loading="lazy" onerror="this.remove()"><figcaption>Öğle</figcaption></figure>
+    <figure><img src="gorseller/saat-aksam.jpg" alt="Gün batımı" loading="lazy" onerror="this.remove()"><figcaption>Gün batımı</figcaption></figure>
+    <figure><img src="gorseller/saat-gece.jpg" alt="Gece" loading="lazy" onerror="this.remove()"><figcaption>Gece</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ ÇEKİRDEK DÖNGÜ ============ -->
+<section class="bolum koyu" id="dongu">
+  <h2>Çekirdek döngü</h2>
+  <ol class="dongu">
+    <li><span>1</span><b>Keşfet</b><p>Açık dünyada dolaş, köylülerle tanış, ulaşamadığın yerleri gör.</p></li>
+    <li><span>2</span><b>Çöz</b><p>Butonlar, kablolar, basınç plakaları, zıplama pedleri ve kutularla kurulu bulmacaları çöz.</p></li>
+    <li><span>3</span><b>Kazan</b><p>Her ana bulmaca kalıcı bir yetenek, her gizli sandık para verir.</p></li>
+    <li><span>4</span><b>Geri dön</b><p>Yeni yetenekle eski engelleri aş; kilitli kalan her yer bir vaat.</p></li>
+  </ol>
+</section>
+
+<!-- ============ DÜNYA ============ -->
+<section class="bolum koyu" id="dunya">
+  <h2>Dünya</h2>
+  <p class="aciklama">Dünya adalardan oluşuyor; her ada ayrı bir krallık. Adalar arası teknelerle serbestçe gidip geliniyor.</p>
+  <div class="kartlar">
+    <article class="kart"><div class="kart-gorsel"><img src="gorseller/dunya-orman.jpg" alt="" onerror="this.remove()"></div><h3>Orman Krallığı</h3><p>Başlangıç adası: ana köy, şelale kayalığı, rakamların yaşadığı Numara Köyü, liman köyü ve şeker korsanlar.</p></article>
+    <article class="kart"><div class="kart-gorsel"><img src="gorseller/dunya-buz.jpg" alt="" onerror="this.remove()"></div><h3>Buz Krallığı <small class="konsept">konsept çizim</small></h3><p>Sıradaki ada. Donmuş ormanlar ve buzla örülmüş dallar.</p></article>
+    <article class="kart"><div class="kart-gorsel"><img src="gorseller/dunya-lav.jpg" alt="" onerror="this.remove()"></div><h3>Lav Krallığı <small class="konsept">konsept çizim</small></h3><p>Lav nehirleri, kor yapraklı ağaçlar ve magma çatlaklı dallar. Orman adasından ufukta silueti görünüyor.</p></article>
+  </div>
+</section>
+
+<!-- ============ GALERİ ============ -->
+<section class="bolum" id="galeri">
+  <h2>Ekran görüntüleri</h2>
+  <div class="galeri">
+    <img src="gorseller/galeri/01.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/02.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/03.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/04.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/05.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/06.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/07.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/08.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/09.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/10.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/11.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/12.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/13.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/14.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/15.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/16.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/17.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/18.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/19.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/20.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/21.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/22.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/23.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/24.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/25.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/26.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/27.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/28.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/29.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/30.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/31.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/32.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+    <img src="gorseller/galeri/33.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
+  </div>
+</section>
+
+<!-- ============ KARAKTERLER ============ -->
+<section class="bolum koyu" id="karakterler">
+  <h2>Karakterler</h2>
+  <p class="aciklama">Herkes bir nesne. Yüzleri iki nokta ve bir çizgi; kişilikleri sesleri, animasyonları ve diyaloglarıyla. Orman adasında şimdiden <b class="sayi">40'tan fazla</b> karakter yaşıyor.</p>
+
+  <h3 class="grup-baslik">Ana Köy</h3>
+  <div class="karakterler">
+    <div class="karakter"><img src="gorseller/karakter-kumbara.png" alt="" onerror="this.remove()"><b>Kumbara Adam</b><span>Kurnaz mağazacı</span></div>
+    <div class="karakter"><img src="gorseller/karakter-piyano.png" alt="" onerror="this.remove()"><b>Piyano Adam</b><span>Köyün müzisyeni</span></div>
+    <div class="karakter"><img src="gorseller/karakter-telefon.png" alt="" onerror="this.remove()"><b>Tuşlu Telefon</b><span>Ekranı yüzü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-dal.png" alt="" onerror="this.remove()"><b>Dal İnsan</b><span>Köylü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-kutu.png" alt="" onerror="this.remove()"><b>Kutu İnsan</b><span>Köylü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-sunger.png" alt="" onerror="this.remove()"><b>Sünger İnsan</b><span>Köylü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-tas.png" alt="" onerror="this.remove()"><b>Taş İnsan</b><span>Köylü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-mantar.png" alt="" onerror="this.remove()"><b>Mantar İnsan</b><span>Köylü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-seker.png" alt="" onerror="this.remove()"><b>Şeker İnsan</b><span>Köylü</span></div>
+  </div>
+
+  <h3 class="grup-baslik">Numara Köyü</h3>
+  <div class="karakterler">
+    <div class="karakter genis"><img src="gorseller/karakter-rakamlar.png" alt="" onerror="this.remove()"><b>Rakamlar 0–9</b><span>On rakamın yaşadığı köy. Konuşulabilir, kucağa alınıp taşınabilirler.</span></div>
+  </div>
+
+  <h3 class="grup-baslik">Liman Köyü</h3>
+  <div class="karakterler">
+    <div class="karakter"><img src="gorseller/karakter-capa.png" alt="" onerror="this.remove()"><b>Çapa Adam</b><span>Limanın yerlisi</span></div>
+    <div class="karakter"><img src="gorseller/karakter-kopekbaligi.png" alt="" onerror="this.remove()"><b>Köpekbalığı Adam</b><span>Limanın tamircisi</span></div>
+    <div class="karakter"><img src="gorseller/karakter-kraker.png" alt="" onerror="this.remove()"><b>Kraker Adam</b><span>Düğüm ustası</span></div>
+    <div class="karakter"><img src="gorseller/karakter-balik.png" alt="" onerror="this.remove()"><b>Balık Adam</b><span>Kuyruğunun üstünde zıplayan balıkçı</span></div>
+    <div class="karakter"><img src="gorseller/karakter-cansimidi.png" alt="" onerror="this.remove()"><b>Can Simidi Adam</b><span>Liman köylüsü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-fici.png" alt="" onerror="this.remove()"><b>Fıçı Adam</b><span>Liman köylüsü</span></div>
+    <div class="karakter"><img src="gorseller/karakter-candede.png" alt="" onerror="this.remove()"><b>Can Dede</b><span>Canını yenileyen bilge</span></div>
+  </div>
+
+  <h3 class="grup-baslik">Dünyanın bekçileri</h3>
+  <div class="karakterler">
+    <div class="karakter"><img src="gorseller/karakter-tabela.png" alt="" onerror="this.remove()"><b>Yön Tabelaları</b><span>Konuşan tabelalar, hızlı seyahat noktaları</span></div>
+    <div class="karakter"><img src="gorseller/karakter-cammuhafiz.png" alt="" onerror="this.remove()"><b>Cam Muhafızlar</b><span>Dokuz camdan bekçi</span></div>
+  </div>
+
+  <h3 class="grup-baslik">Tehlikeler</h3>
+  <div class="karakterler">
+    <div class="karakter tehlike"><img src="gorseller/karakter-cali.png" alt="" onerror="this.remove()"><b>Çalı Canavarı</b><span>Ormanın yaratığı</span></div>
+    <div class="karakter tehlike"><img src="gorseller/karakter-iskelet.png" alt="" onerror="this.remove()"><b>Şeker İskelet Korsan</b><span>Korsan tayfası</span></div>
+    <div class="karakter tehlike"><img src="gorseller/karakter-kaptan.png" alt="" onerror="this.remove()"><b>Şeker Korsan Kaptan</b><span>Boss · Liman köyünün belası</span></div>
+  </div>
+</section>
+
+<!-- ============ DURUM ============ -->
+<section class="bolum" id="durum">
+  <h2>Şu an neredeyiz?</h2>
+  <div class="iki-kolon">
+    <div>
+      <h3 class="alt-baslik">Hazır ve oynanabilir</h3>
+      <ul class="liste tamam">
+        <li>Orman adasının büyük kısmı: ana köy, NPC'ler, liman köyü</li>
+        <li>Bulmaca parçaları: buton, kablo, basınç plakası, canlı zıplama pedi, kutu ve taşlar</li>
+        <li>İlk ana bulmaca ve mini bulmacalar, gizli sandıklar</li>
+        <li>Yetenek sistemi, mağaza ve kademeli yükseltmeler</li>
+        <li>Dövüş ve boss karşılaşması</li>
+        <li>Ara sahne, görev takibi, harita, hızlı seyahat, kayıt sistemi</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="alt-baslik">Sıradaki</h3>
+      <ul class="liste sirada">
+        <li>İkinci ana bulmaca: şelale kayalığındaki kılıç</li>
+        <li>Orman adasının tamamlanması</li>
+        <li>Oynanabilir demo</li>
+        <li>Buz Krallığı</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EKİP ============ -->
+<section class="bolum koyu" id="ekip">
+  <h2>Ekip</h2>
+  <div class="ekip">
+    <div class="kisi">
+      <img src="gorseller/mustafa.jpg" alt="" onerror="this.remove()">
+      <div>
+        <b>Mustafa</b>
+        <span>TuranSoft · Tek kişilik ekip</span>
+        <p>Tasarım, programlama, seviye tasarımı ve prodüksiyon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ İLETİŞİM ============ -->
+<footer class="alt" id="iletisim">
+  <h2>İletişim</h2>
+  <p><a href="mailto:turansoftdeveloper@gmail.com">turansoftdeveloper@gmail.com</a></p>
+  <p><a href="https://x.com/eraisergame" target="_blank" rel="noopener">x.com/eraisergame</a></p>
+  <small>© TuranSoft · Eraiser</small>
+</footer>
+
+<div class="tam-ekran" id="tamEkran" aria-hidden="true">
+  <button class="tam-kapat" aria-label="Kapat">×</button>
+  <button class="tam-ok sol" aria-label="Önceki">‹</button>
+  <img alt="">
+  <button class="tam-ok sag" aria-label="Sonraki">›</button>
+</div>
+
+<script>
+  // Resme basınca tam ekran. Oklar / klavye ile aynı gruptaki resimler arasında gezilir.
+  (function () {
+    var kutu = document.getElementById('tamEkran');
+    var buyuk = kutu.querySelector('img');
+    var grup = [], sira = 0;
+
+    function goster(i) {
+      sira = (i + grup.length) % grup.length;
+      buyuk.src = grup[sira].src;
+      buyuk.alt = grup[sira].alt;
+      kutu.classList.toggle('tek', grup.length < 2);
+    }
+    function ac(resim) {
+      var kap = resim.closest('.galeri, .saatler, .kartlar, .karakterler') || resim.parentElement;
+      grup = Array.prototype.slice.call(kap.querySelectorAll('img'));
+      goster(grup.indexOf(resim));
+      kutu.classList.add('acik');
+      document.body.style.overflow = 'hidden';
+    }
+    function kapat() {
+      kutu.classList.remove('acik');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.galeri img, .saatler img, .kart-gorsel img, .karakter img').forEach(function (r) {
+      r.addEventListener('click', function () { ac(r); });
+    });
+    kutu.addEventListener('click', function (e) { if (e.target === kutu || e.target === buyuk) kapat(); });
+    kutu.querySelector('.tam-kapat').addEventListener('click', kapat);
+    kutu.querySelector('.sol').addEventListener('click', function (e) { e.stopPropagation(); goster(sira - 1); });
+    kutu.querySelector('.sag').addEventListener('click', function (e) { e.stopPropagation(); goster(sira + 1); });
+    document.addEventListener('keydown', function (e) {
+      if (!kutu.classList.contains('acik')) return;
+      if (e.key === 'Escape') kapat();
+      if (e.key === 'ArrowLeft') goster(sira - 1);
+      if (e.key === 'ArrowRight') goster(sira + 1);
+    });
+  })();
+
+  // YouTube kimliği girilmişse videoyu yükle, girilmemişse yer tutucu kalsın
+  document.querySelectorAll('iframe[data-youtube]').forEach(function (f) {
+    var id = f.getAttribute('data-youtube');
+    if (id && id !== 'YOUTUBE_KIMLIGI') {
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id;
+      f.parentElement.classList.add('dolu');
+    }
+  });
+</script>
+</body>
+</html>
