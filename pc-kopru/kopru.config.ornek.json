@@ -1,0 +1,39 @@
+{
+  "port": 8787,
+  "token": "",
+  "tunel": {
+    "tip": "hizli"
+  },
+  "sunucular": {
+    "dosya": {
+      "acik": true,
+      "tip": "stdio",
+      "aciklama": "Proje klasörlerini okuma/yazma",
+      "komut": "npx -y @modelcontextprotocol/server-filesystem",
+      "klasorler": [
+        "C:/Users/KULLANICI_ADIN/Projeler/OyunProjem"
+      ]
+    },
+    "hafiza": {
+      "acik": true,
+      "tip": "stdio",
+      "aciklama": "Claude hafıza dosyaları (CLAUDE.md, memory)",
+      "komut": "node \"{KOPRU}/hafiza-mcp.js\"",
+      "env": {
+        "HAFIZA_YAZMA": "1"
+      }
+    },
+    "blender": {
+      "acik": true,
+      "tip": "stdio",
+      "aciklama": "Blender MCP (Blender'da eklenti açık olmalı)",
+      "komut": "uvx blender-mcp"
+    },
+    "unity": {
+      "acik": true,
+      "tip": "http",
+      "aciklama": "MCP for Unity (Unity açık, Transport: HTTPLocal, sunucu çalışıyor olmalı)",
+      "hedef": "http://127.0.0.1:8080/mcp"
+    }
+  }
+}
