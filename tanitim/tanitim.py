@@ -10,6 +10,7 @@ import json
 import math
 import random
 import subprocess
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -20,6 +21,11 @@ VIDEO = KOK.parent / "ham" / "Movie_019.mp4"
 MUZIK = KOK.parent / "ham" / "music.mp3"
 FONT = KOK / "Fredoka-Bold.ttf"
 CIKTI = KOK / "cikti" / "eraiser_tanitim.mp4"
+# Hedef video bit hızı (Mbps). Varsayılan 16; `python3 tanitim.py 12.4`
+# 30 MB altında kalan hafif sürümü üretir.
+MBPS = float(sys.argv[1]) if len(sys.argv) > 1 else 16.0
+if MBPS != 16.0:
+    CIKTI = CIKTI.with_name(f"eraiser_tanitim_{MBPS:g}mbps.mp4")
 
 W, H, FPS = 1080, 1920, 30
 SURE = 19.25
@@ -342,7 +348,8 @@ def main():
         "[v][1:v]overlay=0:0:format=auto:shortest=1,format=yuv420p[o]",
         "-map", "[o]", "-map", "2:a",
         "-c:v", "libx264", "-preset", "slow", "-profile:v", "high",
-        "-b:v", "16M", "-minrate", "12M", "-maxrate", "22M", "-bufsize", "32M",
+        "-b:v", f"{MBPS}M", "-minrate", "12M", "-maxrate", f"{MBPS * 1.3:.1f}M",
+        "-bufsize", f"{MBPS * 2:.0f}M",
         "-g", str(FPS), "-colorspace", "bt709", "-color_primaries", "bt709",
         "-color_trc", "bt709",
         "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
