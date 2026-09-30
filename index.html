@@ -4,78 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eraiser</title>
-<meta name="description" content="Eraiser — nesnelerden oluşan canlı bir dünyada geçen 3D açık dünya bulmaca-macera oyunu.">
+<meta name="description" content="Eraiser: nesnelerden yapılmış canlı bir dünyada geçen 3D açık dünya bulmaca-macera oyunu. Son kalemin çizdiği karalamaları sil, dünyayı aç.">
 <meta property="og:title" content="Eraiser">
-<meta property="og:description" content="Karanlığı sil, dünyayı aç. 3D açık dünya bulmaca-macera.">
+<meta property="og:description" content="Karalamayı sil, dünyayı aç. 3D açık dünya bulmaca-macera, PC.">
 <meta property="og:image" content="gorseller/kapak.jpg">
 <link rel="icon" href="gorseller/ikon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="stil.css">
 </head>
 <body>
 
 <!-- ============ ÜST ============ -->
 <header class="ust">
-  <a class="logo" href="#">Eraiser</a>
+  <a class="logo" href="#"><span class="sprite el logo-silgi" aria-hidden="true"></span>Eraiser</a>
   <nav>
+    <a href="#hikaye">Hikâye</a>
     <a href="#oyun">Oyun</a>
-    <a href="#dongu">Döngü</a>
     <a href="#dunya">Dünya</a>
+    <a href="#karakterler">Karakterler</a>
     <a href="#durum">Durum</a>
-    <a href="#ekip">Ekip</a>
   </nav>
 </header>
 
 <!-- ============ GİRİŞ ============ -->
 <section class="giris">
-  <div class="giris-arka">
-    <img src="gorseller/kapak.jpg" alt="" onerror="this.remove()">
-  </div>
+  <div class="giris-arka"><img src="gorseller/kapak.jpg" alt="" onerror="this.remove()"></div>
   <div class="giris-icerik">
     <p class="etiket">3D açık dünya bulmaca-macera · PC</p>
-    <h1>Karanlığı sil,<br>dünyayı aç.</h1>
-    <p class="giris-alt">Küçük bir silgi, nesnelerden yapılmış canlı bir dünyada, her şeyi saran karanlık asma dallarına karşı.</p>
+    <h1>
+      <span class="silinen">Karalamayı<img class="karalama" src="svg/karalama-yogun.svg" alt=""><span class="sprite kosu silgi-gecen" aria-hidden="true"></span></span> sil,<br>
+      dünyayı aç.
+    </h1>
+    <p class="giris-alt">Küçük bir silgi, nesnelerden yapılmış canlı bir dünyada, hayatta kalan son kalemin çizdiği karalamalara karşı.</p>
     <div class="dugmeler">
-      <a class="dugme ana" href="#video">Videoyu izle</a>
-      <a class="dugme" href="https://x.com/eraisergame" target="_blank" rel="noopener">@eraisergame</a>
+      <a class="dugme-silgi" href="#video"><span>Videoyu izle</span></a>
+      <a class="dugme-kagit" href="https://x.com/eraisergame" target="_blank" rel="noopener">@eraisergame</a>
     </div>
   </div>
+  <div class="kenar kenar-alt"></div>
 </section>
 
 <!-- ============ VİDEO ============ -->
 <section class="bolum" id="video">
   <div class="video-kutu">
+    <img class="bant bant-sol" src="svg/bant.svg" alt="">
+    <img class="bant bant-sag" src="svg/bant-mavi.svg" alt="">
     <!-- YouTube linkinin sonundaki kimliği aşağıya yaz: youtube.com/watch?v=BURASI -->
-    <iframe data-youtube="nJeYo7b5-RI" title="Eraiser Pre-Alpha #1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    <iframe data-youtube="m3RjPxu_vt0" title="Eraiser Pre-Alpha oynanış" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
     <div class="yer-tutucu">Oynanış videosu buraya gelecek</div>
   </div>
 </section>
 
+<!-- ============ HİKÂYE ============ -->
+<section class="bolum" id="hikaye">
+  <h2>Hikâye</h2>
+  <div class="iki-kolon">
+    <div class="metin">
+      <p class="buyuk">Ormanın geçmişinde bir savaş var ve kimse onu hatırlamıyor, çünkü tarih kelimenin tam anlamıyla <em>silindi</em>.</p>
+      <p>Silgi Kralı, kalem türünü yok eden savaştan sonra pişman olur ve kendini gölün ortasındaki Denge Yapısı'na feda eder. Yapı, hayatta kalan son kalemin çizdiği her şeyi kendiliğinden siler.</p>
+      <p>Yıllar sonra yapı durur. Kalem'in karalamaları ilk kez kalıcı olur: yolları kapatır, köyleri birbirine düşürür. Bu yalanları silebilen tek kişi, kralın son kırıntısından doğmuş küçük bir silgi çocuktur. Ve bunu kendisi bilmez.</p>
+      <p>Kalem bir canavar değil, ailesinin silinişini izlemiş bir yetim. Kaybettiklerini geri çizmeye çalışıyor, her denemesi bozuk bir yaratık olarak çıkıyor.</p>
+      <blockquote><img src="svg/karalama-cizgi.svg" alt="">Silmek silmeyi doğurur. Oyunun sorusu: silebildiğin hâlde silmemeyi seçebilir misin?</blockquote>
+    </div>
+    <div class="notlar">
+      <div class="not not-turuncu"><b>Silmenin bedeli</b>Her silgi bedeniyle siler ve sildikçe aşınır. Bu yüzden silgiler silmez: yasak ve ayıp.</div>
+      <div class="not not-mavi"><b>Sen farklısın</b>Kralın gücü bedelsiz siler. Köylüler bunu görünce sana şüpheyle bakmaya başlar.</div>
+      <div class="not not-yesil"><b>Kalem'in zaafı</b>Camı karalayamaz, suya giremez. Cam muhafızlardan uzak durur.</div>
+      <div class="not not-mor"><b>Tek ahlaki an</b>Bozuk bir yaratıkla karşılaşırsın: vurabilir ya da bırakabilirsin. Sonra onu tanırsın.</div>
+      <img class="suslu goz" src="svg/karalama-goz.svg" alt="">
+      <img class="suslu kalem" src="svg/kalem.svg" alt="">
+    </div>
+  </div>
+</section>
+
 <!-- ============ OYUN NEDİR ============ -->
-<section class="bolum" id="oyun">
+<section class="bolum masa" id="oyun">
+  <div class="kenar kenar-ust"></div>
   <h2>Oyun nedir?</h2>
   <div class="iki-kolon">
-    <div>
-      <p class="buyuk">Eraiser'da küçük bir silgisin. Dünya; tabelalardan, telefonlardan, kumbaralardan ve piyanolardan yapılmış karakterlerle dolu. Ama her yeri karanlık asma dalları sarmış.</p>
-      <p>Dalları silerek yol açıyor, dünyaya dağılmış bulmacaları çözüyor, her çözümde <strong>kalıcı bir yetenek</strong> kazanıyorsun. Her yetenek, daha önce önünden geçip ulaşamadığın yerlere geri dönmen için bir sebep. Bulmacaların ödülü ve engeli aynı karede görünür; oyuna yol gösteren işaret, ok ya da harita noktası koymuyoruz, oyuncu merakla ilerliyor.</p>
+    <div class="metin">
+      <p class="buyuk">Eraiser'da küçük bir silgisin. Dünya tabelalardan, telefonlardan, kumbaralardan ve piyanolardan yapılmış karakterlerle dolu.</p>
+      <p>Karalamaları silerek yol açıyor, dünyaya dağılmış bulmacaları çözüyor, her ana bulmacada <strong>kalıcı bir yetenek</strong> kazanıyorsun. Her yetenek, önünden geçip ulaşamadığın yerlere geri dönmen için bir sebep.</p>
+      <p>Oyuna ok, işaret ya da harita noktası koymuyoruz. Bulmacanın ödülü ve engeli aynı karede görünür, oyuncu merakla ilerler.</p>
     </div>
-    <ul class="kartlar-kucuk">
+    <ul class="fis">
       <li><b>Tür</b><span>Açık dünya bulmaca-macera</span></li>
       <li><b>Ton</b><span>Sevimli ama çocuksu değil</span></li>
       <li><b>Platform</b><span>PC (Steam)</span></li>
       <li><b>Model</b><span>Premium</span></li>
       <li><b>Motor</b><span>Unity (URP)</span></li>
+      <li><b>Dil</b><span>Türkçe, İngilizce</span></li>
       <li><b>İlham</b><span>Supraland, Zelda, Adventure Time</span></li>
     </ul>
   </div>
+
+  <h3 class="ara-baslik">Çekirdek döngü</h3>
+  <ol class="dongu">
+    <li class="not not-turuncu"><span>1</span><b>Keşfet</b><p>Açık dünyada dolaş, köylülerle tanış, ulaşamadığın yerleri gör.</p></li>
+    <li class="not not-mavi"><span>2</span><b>Çöz</b><p>Buton, kablo, basınç plakası, zıplama pedi, kutu ve taşlarla kurulu bulmacaları çöz.</p></li>
+    <li class="not not-yesil"><span>3</span><b>Kazan</b><p>Her ana bulmaca kalıcı bir yetenek, her gizli sandık para verir.</p></li>
+    <li class="not not-mor"><span>4</span><b>Geri dön</b><p>Yeni yetenekle eski engelleri aş. Kilitli kalan her yer bir vaat.</p></li>
+  </ol>
+  <div class="kenar kenar-alt"></div>
 </section>
 
 <!-- ============ GÜN DÖNGÜSÜ ============ -->
-<section class="bolum saatler-bolum" id="saatler">
+<section class="bolum" id="saatler">
   <h2>Günün her saati</h2>
-  <p class="aciklama">Dünya kendi gün döngüsüyle yaşıyor: sabah, öğle, gün batımı, gece. Işık, gökyüzü, müzik ve hayvanlar saate göre değişiyor.</p>
+  <p class="aciklama">Dünya kendi gün döngüsüyle yaşıyor. Işık, gökyüzü, müzik ve hayvanlar saate göre değişiyor.</p>
   <div class="saatler">
     <figure><img src="gorseller/saat-sabah.jpg" alt="Sabah" loading="lazy" onerror="this.remove()"><figcaption>Sabah</figcaption></figure>
     <figure><img src="gorseller/saat-oglen.jpg" alt="Öğle" loading="lazy" onerror="this.remove()"><figcaption>Öğle</figcaption></figure>
@@ -84,31 +122,23 @@
   </div>
 </section>
 
-<!-- ============ ÇEKİRDEK DÖNGÜ ============ -->
-<section class="bolum koyu" id="dongu">
-  <h2>Çekirdek döngü</h2>
-  <ol class="dongu">
-    <li><span>1</span><b>Keşfet</b><p>Açık dünyada dolaş, köylülerle tanış, ulaşamadığın yerleri gör.</p></li>
-    <li><span>2</span><b>Çöz</b><p>Butonlar, kablolar, basınç plakaları, zıplama pedleri ve kutularla kurulu bulmacaları çöz.</p></li>
-    <li><span>3</span><b>Kazan</b><p>Her ana bulmaca kalıcı bir yetenek, her gizli sandık para verir.</p></li>
-    <li><span>4</span><b>Geri dön</b><p>Yeni yetenekle eski engelleri aş; kilitli kalan her yer bir vaat.</p></li>
-  </ol>
-</section>
-
 <!-- ============ DÜNYA ============ -->
-<section class="bolum koyu" id="dunya">
+<section class="bolum masa" id="dunya">
+  <div class="kenar kenar-ust"></div>
   <h2>Dünya</h2>
-  <p class="aciklama">Dünya adalardan oluşuyor; her ada ayrı bir krallık. Adalar arası teknelerle serbestçe gidip geliniyor.</p>
+  <p class="aciklama">Dünya adalardan oluşuyor, her ada ayrı bir krallık. Adalar arasında tekneyle serbestçe gidip geliniyor.</p>
   <div class="kartlar">
-    <article class="kart"><div class="kart-gorsel"><img src="gorseller/dunya-orman.jpg" alt="" onerror="this.remove()"></div><h3>Orman Krallığı</h3><p>Başlangıç adası: ana köy, şelale kayalığı, rakamların yaşadığı Numara Köyü, liman köyü ve şeker korsanlar.</p></article>
-    <article class="kart"><div class="kart-gorsel"><img src="gorseller/dunya-buz.jpg" alt="" onerror="this.remove()"></div><h3>Buz Krallığı <small class="konsept">konsept çizim</small></h3><p>Sıradaki ada. Donmuş ormanlar ve buzla örülmüş dallar.</p></article>
-    <article class="kart"><div class="kart-gorsel"><img src="gorseller/dunya-lav.jpg" alt="" onerror="this.remove()"></div><h3>Lav Krallığı <small class="konsept">konsept çizim</small></h3><p>Lav nehirleri, kor yapraklı ağaçlar ve magma çatlaklı dallar. Orman adasından ufukta silueti görünüyor.</p></article>
+    <article class="kart"><img class="bant" src="svg/bant.svg" alt=""><div class="kart-gorsel"><img src="gorseller/dunya-orman.jpg" alt="" onerror="this.remove()"></div><h3>Orman Krallığı</h3><p>Başlangıç adası. Ana köy, şelale kayalığı, rakamların yaşadığı Numara Köyü, liman köyü, cam fanusun içindeki Teknoloji Köyü ve ilk zindan.</p></article>
+    <article class="kart"><img class="bant" src="svg/bant-mavi.svg" alt=""><div class="kart-gorsel"><img src="gorseller/dunya-buz.jpg" alt="" onerror="this.remove()"></div><h3>Buz Krallığı <small class="konsept">konsept çizim</small></h3><p>Sıradaki ada. Donmuş ormanlar ve buzla örülmüş karalamalar.</p></article>
+    <article class="kart"><img class="bant" src="svg/bant.svg" alt=""><div class="kart-gorsel"><img src="gorseller/dunya-lav.jpg" alt="" onerror="this.remove()"></div><h3>Lav Krallığı <small class="konsept">konsept çizim</small></h3><p>Lav nehirleri, kor yapraklı ağaçlar. Orman adasından ufukta silueti görünüyor.</p></article>
   </div>
+  <div class="kenar kenar-alt"></div>
 </section>
 
 <!-- ============ GALERİ ============ -->
 <section class="bolum" id="galeri">
   <h2>Ekran görüntüleri</h2>
+  <p class="aciklama">Hepsi oyun içinden. Büyütmek için tıkla, oklarla gez.</p>
   <div class="galeri">
     <img src="gorseller/galeri/01.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
     <img src="gorseller/galeri/02.jpg" alt="Eraiser ekran görüntüsü" loading="lazy" onerror="this.remove()">
@@ -147,101 +177,121 @@
 </section>
 
 <!-- ============ KARAKTERLER ============ -->
-<section class="bolum koyu" id="karakterler">
+<section class="bolum masa" id="karakterler">
+  <div class="kenar kenar-ust"></div>
   <h2>Karakterler</h2>
-  <p class="aciklama">Herkes bir nesne. Yüzleri iki nokta ve bir çizgi; kişilikleri sesleri, animasyonları ve diyaloglarıyla. Orman adasında şimdiden <b class="sayi">40'tan fazla</b> karakter yaşıyor.</p>
+  <p class="aciklama">Herkes bir nesne. Yüzleri iki nokta ve bir çizgi, kişilikleri sesleri, animasyonları ve sözleriyle. Orman adasında şimdiden <b class="vurgu">40'tan fazla</b> karakter yaşıyor.</p>
+
+  <h3 class="grup-baslik">Hikâyenin merkezi</h3>
+  <div class="karakterler">
+    <div class="karakter" style="--renk:#f28f96"><i></i><b>Silgi Çocuk</b><span>Oyuncu. Kralın son kırıntısı, bunu bilmiyor.</span></div>
+    <div class="karakter" style="--renk:#f6c6a8"><i></i><b>Silgi Anne</b><span>Sakin, sevgi dolu, silmenin bedelini bilen.</span></div>
+    <div class="karakter" style="--renk:#a9bfd9"><i></i><b>Silgi Baba</b><span>İnatçı, bir sandığı açmak için bütün gün uğraşan.</span></div>
+    <div class="karakter" style="--renk:#bfe3e6"><i></i><b>Aytapa</b><span>Teknoloji Köyü'nde yaşayan, dünyadaki tek insan.</span></div>
+    <div class="karakter tehlike" style="--renk:#4a4858"><i></i><b>Kalem</b><span>Türünün son üyesi. Erken erişimde yalnızca silüeti görünür.</span></div>
+  </div>
 
   <h3 class="grup-baslik">Ana Köy</h3>
   <div class="karakterler">
-    <div class="karakter"><img src="gorseller/karakter-kumbara.png" alt="" onerror="this.remove()"><b>Kumbara Adam</b><span>Kurnaz mağazacı</span></div>
-    <div class="karakter"><img src="gorseller/karakter-piyano.png" alt="" onerror="this.remove()"><b>Piyano Adam</b><span>Köyün müzisyeni</span></div>
-    <div class="karakter"><img src="gorseller/karakter-telefon.png" alt="" onerror="this.remove()"><b>Tuşlu Telefon</b><span>Ekranı yüzü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-dal.png" alt="" onerror="this.remove()"><b>Dal İnsan</b><span>Köylü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-kutu.png" alt="" onerror="this.remove()"><b>Kutu İnsan</b><span>Köylü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-sunger.png" alt="" onerror="this.remove()"><b>Sünger İnsan</b><span>Köylü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-tas.png" alt="" onerror="this.remove()"><b>Taş İnsan</b><span>Köylü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-mantar.png" alt="" onerror="this.remove()"><b>Mantar İnsan</b><span>Köylü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-seker.png" alt="" onerror="this.remove()"><b>Şeker İnsan</b><span>Köylü</span></div>
+    <div class="karakter" style="--renk:#f4a9b8"><i></i><b>Kumbara Adam</b><span>Kurnaz mağazacı</span></div>
+    <div class="karakter" style="--renk:#e9e4da"><i></i><b>Piyano Adam</b><span>Köyün müzisyeni</span></div>
+    <div class="karakter" style="--renk:#9fd0a8"><i></i><b>Tuşlu Telefon</b><span>Ekranı yüzü</span></div>
+    <div class="karakter" style="--renk:#c9a26f"><i></i><b>Dal İnsan</b><span>Köyün en şüpheci sakini</span></div>
+    <div class="karakter" style="--renk:#d8b98a"><i></i><b>Kutu İnsan</b><span>Köylü</span></div>
+    <div class="karakter" style="--renk:#f3e27a"><i></i><b>Sünger İnsan</b><span>Köylü</span></div>
+    <div class="karakter" style="--renk:#b8b5ae"><i></i><b>Taş İnsan</b><span>Köylü</span></div>
+    <div class="karakter" style="--renk:#e7a07e"><i></i><b>Mantar İnsan</b><span>Köylü</span></div>
+    <div class="karakter" style="--renk:#f7b6d6"><i></i><b>Şeker İnsan</b><span>Köylü</span></div>
   </div>
 
-  <h3 class="grup-baslik">Numara Köyü</h3>
+  <h3 class="grup-baslik">Numara Köyü ve Liman Köyü</h3>
   <div class="karakterler">
-    <div class="karakter genis"><img src="gorseller/karakter-rakamlar.png" alt="" onerror="this.remove()"><b>Rakamlar 0–9</b><span>On rakamın yaşadığı köy. Konuşulabilir, kucağa alınıp taşınabilirler.</span></div>
-  </div>
-
-  <h3 class="grup-baslik">Liman Köyü</h3>
-  <div class="karakterler">
-    <div class="karakter"><img src="gorseller/karakter-capa.png" alt="" onerror="this.remove()"><b>Çapa Adam</b><span>Limanın yerlisi</span></div>
-    <div class="karakter"><img src="gorseller/karakter-kopekbaligi.png" alt="" onerror="this.remove()"><b>Köpekbalığı Adam</b><span>Limanın tamircisi</span></div>
-    <div class="karakter"><img src="gorseller/karakter-kraker.png" alt="" onerror="this.remove()"><b>Kraker Adam</b><span>Düğüm ustası</span></div>
-    <div class="karakter"><img src="gorseller/karakter-balik.png" alt="" onerror="this.remove()"><b>Balık Adam</b><span>Kuyruğunun üstünde zıplayan balıkçı</span></div>
-    <div class="karakter"><img src="gorseller/karakter-cansimidi.png" alt="" onerror="this.remove()"><b>Can Simidi Adam</b><span>Liman köylüsü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-fici.png" alt="" onerror="this.remove()"><b>Fıçı Adam</b><span>Liman köylüsü</span></div>
-    <div class="karakter"><img src="gorseller/karakter-candede.png" alt="" onerror="this.remove()"><b>Can Dede</b><span>Canını yenileyen bilge</span></div>
+    <div class="karakter genis" style="--renk:#f6a45c"><i></i><b>Rakamlar 0-9</b><span>On rakamın yaşadığı köy. Konuşulabilir, kucağa alınıp taşınabilirler.</span></div>
+    <div class="karakter" style="--renk:#8e9aa8"><i></i><b>Çapa Adam</b><span>Limanın yerlisi</span></div>
+    <div class="karakter" style="--renk:#8fb4de"><i></i><b>Köpekbalığı Adam</b><span>Limanın tamircisi</span></div>
+    <div class="karakter" style="--renk:#e7c796"><i></i><b>Kraker Adam</b><span>Düğüm ustası</span></div>
+    <div class="karakter" style="--renk:#9cc9e8"><i></i><b>Balık Adam</b><span>Kuyruğunun üstünde zıplayan balıkçı</span></div>
+    <div class="karakter" style="--renk:#f08a7a"><i></i><b>Can Simidi Adam</b><span>Liman köylüsü</span></div>
+    <div class="karakter" style="--renk:#b98a5e"><i></i><b>Fıçı Adam</b><span>Liman köylüsü</span></div>
+    <div class="karakter" style="--renk:#e3d9c6"><i></i><b>Can Dede</b><span>Canını yenileyen bilge</span></div>
   </div>
 
   <h3 class="grup-baslik">Dünyanın bekçileri</h3>
   <div class="karakterler">
-    <div class="karakter"><img src="gorseller/karakter-tabela.png" alt="" onerror="this.remove()"><b>Yön Tabelaları</b><span>Konuşan tabelalar, hızlı seyahat noktaları</span></div>
-    <div class="karakter"><img src="gorseller/karakter-cammuhafiz.png" alt="" onerror="this.remove()"><b>Cam Muhafızlar</b><span>Dokuz camdan bekçi</span></div>
+    <div class="karakter" style="--renk:#c9a36a"><i></i><b>Yön Tabelaları</b><span>Konuşan tabelalar, hızlı seyahat noktaları</span></div>
+    <div class="karakter" style="--renk:#cfe6ef"><i></i><b>Cam Muhafızlar</b><span>Kalem'in çizemediği tek malzemeden bekçiler. Biraz sakar.</span></div>
   </div>
 
   <h3 class="grup-baslik">Tehlikeler</h3>
   <div class="karakterler">
-    <div class="karakter tehlike"><img src="gorseller/karakter-cali.png" alt="" onerror="this.remove()"><b>Çalı Canavarı</b><span>Ormanın yaratığı</span></div>
-    <div class="karakter tehlike"><img src="gorseller/karakter-iskelet.png" alt="" onerror="this.remove()"><b>Şeker İskelet Korsan</b><span>Korsan tayfası</span></div>
-    <div class="karakter tehlike"><img src="gorseller/karakter-kaptan.png" alt="" onerror="this.remove()"><b>Şeker Korsan Kaptan</b><span>Boss · Liman köyünün belası</span></div>
+    <div class="karakter tehlike" style="--renk:#6f8f5a"><i></i><b>Çalı Canavarı</b><span>Ormanın yaratığı</span></div>
+    <div class="karakter tehlike" style="--renk:#f2d8e4"><i></i><b>Şeker İskelet Korsan</b><span>Korsan tayfası</span></div>
+    <div class="karakter tehlike" style="--renk:#d9707d"><i></i><b>Şeker Korsan Kaptan</b><span>Boss · Liman köyünün belası</span></div>
+    <div class="karakter tehlike" style="--renk:#3a3148"><i></i><b>Göz Nöbetçileri</b><span>Zindanda bakarken kızaran karalama gözler</span></div>
+    <div class="karakter tehlike" style="--renk:#2f3f73"><i></i><b>Mürekkep Canavarı</b><span>Islakken silinmez, kuruyunca biter</span></div>
+    <div class="karakter tehlike" style="--renk:#d6337f"><i></i><b>Kedi Canavarı</b><span>Boss · ilk zindan</span></div>
   </div>
+  <div class="kenar kenar-alt"></div>
 </section>
 
 <!-- ============ DURUM ============ -->
 <section class="bolum" id="durum">
   <h2>Şu an neredeyiz?</h2>
+  <div class="sayilar">
+    <div class="not not-turuncu"><b>~22 dk</b>kesintisiz oynanabilir akış, menüden zindan boss'una</div>
+    <div class="not not-mavi"><b>3 + 1</b>üç ana bulmaca ve bir tam zindan</div>
+    <div class="not not-yesil"><b>40+</b>karakter, her biri bir nesne</div>
+    <div class="not not-mor"><b>TR / EN</b>iki dilde, yerelleştirme altyapısı kurulu</div>
+  </div>
   <div class="iki-kolon">
     <div>
       <h3 class="alt-baslik">Hazır ve oynanabilir</h3>
       <ul class="liste tamam">
-        <li>Orman adasının büyük kısmı: ana köy, NPC'ler, liman köyü</li>
-        <li>Bulmaca parçaları: buton, kablo, basınç plakası, canlı zıplama pedi, kutu ve taşlar</li>
-        <li>İlk ana bulmaca ve mini bulmacalar, gizli sandıklar</li>
-        <li>Yetenek sistemi, mağaza ve kademeli yükseltmeler</li>
-        <li>Dövüş ve boss karşılaşması</li>
-        <li>Ara sahne, görev takibi, harita, hızlı seyahat, kayıt sistemi</li>
+        <li>Ana menü (pop-up eskiz defteri), ayarlar, yükleme ekranı</li>
+        <li>Açılış sinematiği ve sandık ara sahnesi</li>
+        <li>Orman adasının büyük kısmı: ana köy, liman köyü, Numara Köyü, Teknoloji Köyü</li>
+        <li>Üç ana bulmaca: avludaki sandık, şelale kayalığı, uyuyan kaya devi</li>
+        <li>İlk zindan: göz nöbetçileri, mürekkep odası, kule, boss savaşı ve dönüş ara sahnesi</li>
+        <li>Bulmaca parçaları: buton, kablo, basınç plakası, canlı zıplama pedi, kutu, taş, çark</li>
+        <li>Yetenek sistemi, mağaza ve kademeli yükseltmeler, gizli sandıklar</li>
+        <li>Dövüş: parry, kaçış, saldırı uyarıları, boss karşılaşmaları</li>
+        <li>Tekne, hızlı seyahat, gün döngüsü, kayıt sistemi</li>
       </ul>
     </div>
     <div>
       <h3 class="alt-baslik">Sıradaki</h3>
       <ul class="liste sirada">
-        <li>İkinci ana bulmaca: şelale kayalığındaki kılıç</li>
-        <li>Orman adasının tamamlanması</li>
-        <li>Oynanabilir demo</li>
-        <li>Buz Krallığı</li>
+        <li>Köy hikâyeleri: Liman ile Teknoloji Köyü'nün kavgası, baraj tuzağı, Numara Köyü'nün sahte rakamları</li>
+        <li>Corrupted Zone ve erken erişim finali: Denge Yapısı'nın onarılması</li>
+        <li>Kralın notları ve duruma göre değişen köylü sözleri</li>
+        <li>Buz ve Lav adaları (tam sürüm)</li>
       </ul>
+      <img class="suslu-durum" src="gorseller/silgi-adam.png" onerror="this.onerror=null;this.src='svg/silgi.svg'" alt="">
     </div>
   </div>
 </section>
 
-<!-- ============ EKİP ============ -->
-<section class="bolum koyu" id="ekip">
-  <h2>Ekip</h2>
-  <div class="ekip">
-    <div class="kisi">
-      <img src="gorseller/mustafa.jpg" alt="" onerror="this.remove()">
+<!-- ============ EKİP + İLETİŞİM ============ -->
+<footer class="alt masa" id="ekip">
+  <div class="kenar kenar-ust"></div>
+  <div class="alt-icerik">
+    <div class="kisi not not-kagit">
+      <img class="bant" src="svg/bant.svg" alt="">
+      <img class="foto" src="gorseller/mustafa.jpg" alt="" onerror="this.remove()">
       <div>
         <b>Mustafa</b>
-        <span>TuranSoft · Tek kişilik ekip</span>
-        <p>Tasarım, programlama, seviye tasarımı ve prodüksiyon.</p>
+        <span>TuranSoft · tek kişilik ekip</span>
+        <p>Tasarım, programlama, seviye tasarımı, animasyon ve prodüksiyon.</p>
       </div>
     </div>
+    <div class="iletisim">
+      <span class="sprite el iletisim-silgi" aria-hidden="true"></span>
+      <h2>İletişim</h2>
+      <p><a href="mailto:turansoftdeveloper@gmail.com">turansoftdeveloper@gmail.com</a></p>
+      <p><a href="https://x.com/eraisergame" target="_blank" rel="noopener">x.com/eraisergame</a></p>
+      <small>© TuranSoft · Eraiser</small>
+    </div>
   </div>
-</section>
-
-<!-- ============ İLETİŞİM ============ -->
-<footer class="alt" id="iletisim">
-  <h2>İletişim</h2>
-  <p><a href="mailto:turansoftdeveloper@gmail.com">turansoftdeveloper@gmail.com</a></p>
-  <p><a href="https://x.com/eraisergame" target="_blank" rel="noopener">x.com/eraisergame</a></p>
-  <small>© TuranSoft · Eraiser</small>
 </footer>
 
 <div class="tam-ekran" id="tamEkran" aria-hidden="true">
@@ -265,8 +315,9 @@
       kutu.classList.toggle('tek', grup.length < 2);
     }
     function ac(resim) {
-      var kap = resim.closest('.galeri, .saatler, .kartlar, .karakterler') || resim.parentElement;
-      grup = Array.prototype.slice.call(kap.querySelectorAll('img'));
+      var kap = resim.closest('.galeri, .saatler, .kartlar') || resim.parentElement;
+      grup = Array.prototype.slice.call(kap.querySelectorAll('.galeri > img, figure img, .kart-gorsel img'));
+      if (grup.indexOf(resim) < 0) grup = [resim];
       goster(grup.indexOf(resim));
       kutu.classList.add('acik');
       document.body.style.overflow = 'hidden';
@@ -275,8 +326,7 @@
       kutu.classList.remove('acik');
       document.body.style.overflow = '';
     }
-
-    document.querySelectorAll('.galeri img, .saatler img, .kart-gorsel img, .karakter img').forEach(function (r) {
+    document.querySelectorAll('.galeri > img, .saatler img, .kart-gorsel img').forEach(function (r) {
       r.addEventListener('click', function () { ac(r); });
     });
     kutu.addEventListener('click', function (e) { if (e.target === kutu || e.target === buyuk) kapat(); });
@@ -298,6 +348,22 @@
       f.src = 'https://www.youtube-nocookie.com/embed/' + id;
       f.parentElement.classList.add('dolu');
     }
+  });
+
+  // İletişime gelince silgi bir kez el sallar
+  (function () {
+    var s = document.querySelector('.iletisim-silgi');
+    if (!s || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (g, o) {
+      if (g[0].isIntersecting) { s.classList.add('salla'); o.disconnect(); }
+    }, { threshold: .8 }).observe(s);
+  })();
+
+  // Karakter kartlarına yüz: tehlikeler kızgın, Kalem'e yüz yok (silüet)
+  document.querySelectorAll('.karakter i').forEach(function (i) {
+    var k = i.parentElement;
+    if (k.querySelector('b').textContent === 'Kalem') { i.classList.add('siluet'); return; }
+    i.classList.add(k.classList.contains('tehlike') ? 'kizgin' : (Math.random() < 0.3 ? 'duz' : 'gulen'));
   });
 </script>
 </body>
