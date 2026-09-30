@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Eraiser tanıtım klibi (TikTok / Reels / Shorts).
 
-Girdi : ../ham/Movie_019.mp4 (1080x1920, 60 fps, sessiz), ../ham/music.mp3
+Girdi : ../ham/Movie_019.mp4 (1080x1920, 60 fps, sessiz), ../ham/music-box-adventure.mp3
 Çıktı : cikti/eraiser_tanitim.mp4 (1080x1920, 30 fps, H.264 ~16 Mbps, AAC)
 
 Tüm zamanlar saniye cinsinden; ayar için aşağıdaki sabitleri değiştir.
@@ -18,7 +18,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 KOK = Path(__file__).resolve().parent
 VIDEO = KOK.parent / "ham" / "Movie_019.mp4"
-MUZIK = KOK.parent / "ham" / "music.mp3"
+MUZIK = KOK.parent / "ham" / "music-box-adventure.mp3"
 FONT = KOK / "Fredoka-Bold.ttf"
 CIKTI = KOK / "cikti" / "eraiser_tanitim.mp4"
 # Hedef video bit hızı (Mbps). Varsayılan 16; `python3 tanitim.py 12.4`
