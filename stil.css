@@ -57,6 +57,38 @@ strong { background: linear-gradient(transparent 55%, rgba(242, 143, 150, .45) 5
 }
 .logo { display: flex; align-items: center; gap: 8px; font-family: var(--el); font-size: 28px; text-decoration: none; }
 
+/* ---------------- kaydırma çubuğu = oyundaki can barı ----------------
+   Can barı (UIKit_HealthBar) 90° döndürüldü: kafa üstte, ayaklar altta, gövde esner.
+   Yol, can barının ahşap oyuğu (UIKit_HealthBarYuva). Görseller 2x (40 px genişlik = 20 css px). */
+::-webkit-scrollbar { width: 20px; background: transparent; }
+::-webkit-scrollbar-corner, ::-webkit-scrollbar-button { background: transparent; display: none; }
+::-webkit-scrollbar-track {
+  background:
+    url(gorseller/kaydirma/yuva-ust.png) top / 100% 12.5px no-repeat,
+    url(gorseller/kaydirma/yuva-alt.png) bottom / 100% 21.5px no-repeat,
+    url(gorseller/kaydirma/yuva-orta.png) 0 12px / 100% calc(100% - 33px) no-repeat;
+}
+::-webkit-scrollbar-thumb {
+  min-height: 70px;
+  background:
+    url(gorseller/kaydirma/silgi-ust.png) top / 100% 16px no-repeat,
+    url(gorseller/kaydirma/silgi-alt.png) bottom / 100% 9px no-repeat,
+    url(gorseller/kaydirma/silgi-orta.png) 0 15px / 100% calc(100% - 23px) no-repeat;
+}
+html.kirp::-webkit-scrollbar-thumb {
+  background:
+    url(gorseller/kaydirma/silgi-kirp-ust.png) top / 100% 16px no-repeat,
+    url(gorseller/kaydirma/silgi-alt.png) bottom / 100% 9px no-repeat,
+    url(gorseller/kaydirma/silgi-orta.png) 0 15px / 100% calc(100% - 23px) no-repeat;
+}
+::-webkit-scrollbar-thumb:active {   /* tutup sürükleyince canı yanıyor */
+  background:
+    url(gorseller/kaydirma/silgi-acik-ust.png) top / 100% 16px no-repeat,
+    url(gorseller/kaydirma/silgi-alt.png) bottom / 100% 9px no-repeat,
+    url(gorseller/kaydirma/silgi-orta.png) 0 15px / 100% calc(100% - 23px) no-repeat;
+}
+@supports not selector(::-webkit-scrollbar) { html { scrollbar-color: var(--silgi) var(--kagit-2); } }
+
 /* ---------------- silgi adam sprite'ları (8 kare, yatay şerit) ---------------- */
 .sprite { display: inline-block; background-repeat: no-repeat; background-size: 800% 100%; background-position: 0 0; }
 .sprite.kosu { background-image: url(gorseller/silgi-adam-kosu.webp); aspect-ratio: 325 / 300; }

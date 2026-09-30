@@ -370,6 +370,17 @@
     }, { threshold: .8 }).observe(s);
   })();
 
+  // Kaydırma çubuğundaki silgi arada bir göz kırpar (oyundaki can barı gibi)
+  (function () {
+    var k = document.documentElement;
+    function kirp() {
+      k.classList.add('kirp');
+      setTimeout(function () { k.classList.remove('kirp'); }, 140);
+      setTimeout(kirp, 2500 + Math.random() * 4000);
+    }
+    setTimeout(kirp, 3000);
+  })();
+
   // Karakter kartlarına yüz: tehlikeler kızgın, Kalem'e yüz yok (silüet)
   document.querySelectorAll('.karakter i').forEach(function (i) {
     var k = i.parentElement;
