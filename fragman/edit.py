@@ -401,17 +401,17 @@ class Crumbs:
 print('varliklar hazirlaniyor...', flush=True)
 PAPER_IMG = paper_base()
 INTRO_SCR = draw_strokes(scribble_strokes(5, 19, -60, H + 60), width=7, alpha=0.60, seed=1)
-TXT_KARA = text_sprite('ERASE THE', 200, GRAPHITE, stroke=GRAPHITE, sw=3, halo=PAPER, hw=22)
-TXT_SIL = text_sprite('SCRIBBLE', 240, PINK, stroke=GRAPHITE, sw=9, halo=PAPER, hw=26, shadow=(45, 43, 41, 110))
-TXT_DUN = text_sprite('UNLOCK THE', 170, WHITE, sw=12, shadow=PINK_D + (255,), sh_off=(9, 12))
-TXT_AC = text_sprite('WORLD.', 300, PINK, sw=13, shadow=(45, 43, 41, 200), sh_off=(10, 14))
+TXT_KARA = text_sprite('just a quiet', 190, GRAPHITE, stroke=GRAPHITE, sw=3, halo=PAPER, hw=22)
+TXT_SIL = text_sprite('walk...', 260, PINK, stroke=GRAPHITE, sw=9, halo=PAPER, hw=26, shadow=(45, 43, 41, 110))
+TXT_DUN = text_sprite("DON'T LOOK", 170, WHITE, sw=12, shadow=PINK_D + (255,), sh_off=(9, 12))
+TXT_AC = text_sprite('BEHIND YOU.', 200, PINK, sw=13, shadow=(45, 43, 41, 200), sh_off=(10, 14))
 TXT_NOTE = text_sprite('teapot elephant?!', 92, GRAPHITE, sw=2, halo=WHITE, hw=14)
-TXT_KIRP = text_sprite('*blink*', 96, GRAPHITE, sw=2, halo=WHITE, hw=14)
+TXT_KIRP = text_sprite('it likes you.', 100, GRAPHITE, sw=2, halo=WHITE, hw=14)
 END_SCR_STROKES = scribble_strokes(9, 18, -60, H + 60)
 END_SCR = draw_strokes(END_SCR_STROKES, width=8, alpha=0.66, seed=2)
 TXT_LOGO = text_sprite('Eraiser', 315, GRAPHITE, sw=2, shadow=(45, 43, 41, 60), sh_off=(6, 9))
-TXT_TAG = text_sprite('Erase the scribble.', 92, GRAPHITE, sw=1)
-TXT_TAG2 = text_sprite('Unlock the world.', 92, PINK_D, sw=1)
+TXT_TAG = text_sprite('A living world', 92, GRAPHITE, sw=1)
+TXT_TAG2 = text_sprite('made of everyday things.', 88, PINK_D, sw=1)
 
 def pill_sprite(label, size=50):
     f = font(BODY, size, 800)
@@ -607,7 +607,7 @@ def render(out_path, preview=False, t_from=0.0, t_to=None):
             if S3t <= t < S['S3']['t1']:
                 u = t - S3t
                 end_k = cl((t - (S['S3']['t1'] - 0.26)) / 0.26)
-                for spr, y, t0 in ((TXT_DUN, 290, 0.0), (TXT_AC, 500, 0.13)):
+                for spr, y, t0 in ((TXT_DUN, 290, 0.0), (TXT_AC, 480, 0.13)):
                     uu = u - t0
                     if uu < 0: continue
                     k = cl(uu / 0.10)
@@ -618,7 +618,7 @@ def render(out_path, preview=False, t_from=0.0, t_to=None):
                     place(f, sp, 540, y, scale=sc, rot=-0.04 if t0 == 0 else 0.03, alpha=cl(uu / 0.04))
                 if 0 < end_k < 1 and int(t * FPS) % 1 == 0:
                     ex = lerp(80, 1000, end_k)
-                    crumbs.emit(ex, 290, 4, vy=(-500, 100)); crumbs.emit(ex, 500, 4, vy=(-500, 100))
+                    crumbs.emit(ex, 290, 4, vy=(-500, 100)); crumbs.emit(ex, 480, 4, vy=(-500, 100))
             # --- S4 doodle
             if S4t <= t < S['S4']['t1']:
                 u = t - S4t
@@ -651,7 +651,7 @@ def render(out_path, preview=False, t_from=0.0, t_to=None):
                         place(f, spr, eyes[0] + ox * 1.0, eyes[1] + oy * 1.0, scale=k * fade, rot=uu * 3.2)
                     pk = (u - 0.05) / 0.14
                     if pk > 0:
-                        place(f, TXT_KIRP, eyes[0] + 330, eyes[1] - 300, scale=eob(pk), rot=0.12, alpha=1 - sm((u - 0.55) / 0.2))
+                        place(f, TXT_KIRP, eyes[0] + 190, eyes[1] - 310, scale=eob(pk), rot=0.12, alpha=1 - sm((u - 0.55) / 0.2))
             # --- S6 cikis: karalama ekrani kaplar
             s6 = S['S6']
             if s6['t0'] + 0.24 <= t < END0:

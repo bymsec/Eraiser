@@ -14,6 +14,12 @@ konumlarini ve SFX zamanlamasini klibe gore yeniden yaz. Altyapi (efektler, geci
 
 - Sohbet Turkce ve samimi ("hacı", "kardeş"). Kisa, net konus.
 - **Videodaki tum yazilar Ingilizce.** (Site Turkce ama fragman Ingilizce.) Turkce surum ancak istenirse.
+- **Yazilar klibin anlattigi ana uygun olmali, oyunun genel slogani degil.** Ilk denemede "ERASE THE SCRIBBLE /
+  UNLOCK THE WORLD" yazmistim; kullanici "bu video cizim silme degil, caydanlik fili gosteren bir video" diye itiraz etti.
+  Once klibin hikayesini/esprisini bul, metni ona yaz. Movie_024 sonrasi onaylanan metin:
+  "just a quiet walk..." → (kameraya donus) "DON'T LOOK / BEHIND YOU." → doodle "teapot elephant?!" →
+  (goz kirpma) "it likes you." → son kart "A living world / made of everyday things." (sitedeki tanimdan).
+  Karalama/silgi gecisleri yazi degil gorsel kimlik oldugu icin kalir.
 - Son kart etiketi: "Coming soon on Steam" (oyun henuz cikmadi; "PC · Steam" YAZMA).
 - Muzik konusunda sormadan karar verme: once "sadece oyun sesi mi, muzik mi?" sor.
 - Kullanici Suno Premium kullaniyor. Suno promptunda **salise/ondalik saniye verme**, tam saniye kullan (0:04 gibi).
