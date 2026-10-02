@@ -1,5 +1,16 @@
 # Eraiser itch.io sayfası: kurulum
 
+## Hızlı yol: özel CSS olmadan (şu an bunu kullan)
+
+Özel CSS izni gelene kadar tasarım görsellerin içine gömülü:
+- `aciklama-gorselli.html`: Description alanına HTML modunda (`<>`) yapıştır. Başlıklar ve tasarımlı bloklar görsel, hikâye ve ana metinler gerçek yazı.
+- `kit/`: bu açıklamanın kullandığı görseller. `acilis.gif` (silginin karalamayı sildiği açılış), `kapanis.gif` (el sallayan silgi), başlıklar, notlar, döngü, gün şeridi, adalar, yaka kartları, fotoğraflar.
+- Görseller `https://bymsec.github.io/Eraiser/itch/kit/...` adresinden yükleniyor. **Bu dal main'e birleşene kadar o adresler boş döner.** Ya dalı birleştir ya da görselleri itch editöründen tek tek yükleyip adresleri değiştir.
+- Görselleri yeniden üretmek: `python3 itch/build.py && python3 itch/render_kit.py`, sonra Playwright ile `.shot` blokları çekilir (bkz. `render_kit.py`).
+- Tema editörü renklerini aşağıdaki 3. adımdaki gibi ayarla; görsellerin zemini `#f6f1e6` sayfa rengine göre hazırlandı.
+
+## Tam tasarım: özel CSS izni gelince
+
 Dosyalar:
 - `aciklama.html`: sayfa içeriği (Description alanına yapıştırılır).
 - `tema.css`: tasarım (Custom CSS alanına yapıştırılır). Kaynağı `tema.src.css`; değiştirince `python3 itch/build.py` ile yeniden üret.
