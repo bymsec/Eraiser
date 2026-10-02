@@ -8,12 +8,14 @@ import soundfile as sf
 
 HERE = os.environ.get('FRAGMAN_WORK', '/tmp/fragman')
 SR = 48000
-meta = json.load(open(os.path.join(HERE, 'meta.json')))
+_MP = os.path.join(HERE, 'meta.json')   # yoksa sadece SFX sentezleyicileri kullanilabilir
+meta = json.load(open(_MP)) if os.path.exists(_MP) else dict(total=0.0, tmap=[], sfx=[], shots=[])
 TOTAL = meta['total']
 N = int(math.ceil(TOTAL * SR)) + SR // 2
 rng = np.random.default_rng(42)
 
-game, gsr = sf.read(os.path.join(HERE, 'game.wav'), dtype='float32')
+_GP = os.path.join(HERE, 'game.wav')
+game, gsr = sf.read(_GP, dtype='float32') if os.path.exists(_GP) else (np.zeros((SR, 2), np.float32), SR)
 assert gsr == SR
 if game.ndim == 1: game = np.stack([game, game], 1)
 

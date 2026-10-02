@@ -16,8 +16,9 @@ FONTS = os.path.join(HERE, 'fonts')
 HAND = os.path.join(FONTS, 'PatrickHand-Regular.ttf')
 BODY = os.path.join(FONTS, 'Nunito-var.ttf')
 W, H, FPS, SFPS = 1080, 1920, 30, 60
-SRC = np.memmap(os.path.join(HERE, 'src.rgb'), dtype=np.uint8, mode='r').reshape(-1, H, W, 3)
-NS = SRC.shape[0]
+_SRCP = os.path.join(HERE, 'src.rgb')   # yoksa (ornegin slider.py yardimcilari ice aktarirken) bos gecilir
+SRC = np.memmap(_SRCP, dtype=np.uint8, mode='r').reshape(-1, H, W, 3) if os.path.exists(_SRCP) else None
+NS = SRC.shape[0] if SRC is not None else 0
 Z0 = 1.09          # taban zoom: alttaki can barini kadrajdan atar
 CROP_BOTTOM = 1770
 

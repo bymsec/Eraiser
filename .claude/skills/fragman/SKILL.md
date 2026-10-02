@@ -43,6 +43,19 @@ konumlarini ve SFX zamanlamasini klibe gore yeniden yaz. Altyapi (efektler, geci
 8. **Kalite kontrol (gondermeden once):** tam cozunurlukte kritik karelere bak; son dosyada onset'lerin gorsel
    vuruslara oturdugunu olc. Sesi dinleyemedigini soyle, olculen degerleri raporla.
 
+## Ikinci ornek: ciglik atan ses slider'i (`fragman/slider.py`, `fragman/slider_audio.py`)
+
+Kaynak `ham/anamenu-ayarlar.mp4` (2560x1440 yatay; ana menu → Settings → Effects slider'i cekilince silgi canlanip
+bagiriyor, ciglik siddeti slider yuzdesini izliyor). Cikti `fragman/cikti/slider-ciglik.mp4`.
+- Konsept: **CC altyazi esprisi** — `[normal slider noises]` (Master), `[SCREAMING]`, %6'da minik `[screaming quietly]`,
+  geri %100'de `[SCREAMING INTENSIFIES]`, son kartta `[distant screaming]`. Altyazi boyutu slider yuzdesini izler.
+- Kanca: ilk 0.75 sn en sert ciglik yakin plani + "I made the volume / slider SCREAM." → teyp durmasi → sakin menu.
+- Yatay kaynaktan dikey: 9:16 pencere (zoom = 1920/1440), cekime gore pan/zoom. UI cekimlerinde bloom KAPALI
+  (beyaz kagit patliyor) → `grade_ui`. Satir cercevesi z=1.68 (etiketler + yuzdeler sigsin).
+- Ses: kayit sesi goruntuyle senkron (espri gercek ses seviyesi), menu muzigi yatak; ciglik dosyasi kancaya ve
+  bogulmus haliyle son karta. Sarsinti/kromatik sapma ciglik bandinin RMS zarfina bagli (ses-reaktif).
+- Calistirma: `SLIDER_WORK=/tmp/fragman2` (src.mp4, src.wav, scream.wav), `FRAGMAN_WORK` fontlar icin.
+
 ## Teknik dersler
 
 - Klip 60fps; cikis 30fps. 0.5x agir cekim dogal kareleri kullanir. Daha yavasi icin `minterpolate` (mci, aobmc) 240fps
