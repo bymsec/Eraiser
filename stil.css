@@ -260,6 +260,8 @@ blockquote img { width: 90px; margin-bottom: 8px; }
 .fis li { display: flex; justify-content: space-between; gap: 16px; line-height: 34px; }
 .fis b { font-family: var(--el); font-weight: 400; font-size: 20px; }
 .fis span { text-align: right; font-size: 15.5px; }
+/* bölümün doğrudan çocuğuysa (Plan > İhtiyaç) .fis'in margin:0'ı ortalamayı bozuyordu */
+.bolum > .fis { margin-left: auto; margin-right: auto; }
 
 /* ---------------- döngü ---------------- */
 .dongu { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 46px; position: relative; }
